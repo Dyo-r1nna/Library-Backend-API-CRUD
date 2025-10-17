@@ -34,7 +34,7 @@ npm start
 # Visit: http://localhost:3000/health
 # Expected: {"ok":true}
 
-## 🔗 API Endpoints
+### 🔗 API Endpoints
 
 ### 📘 Books Management
 | Method | Endpoint | Description | Status Codes |
