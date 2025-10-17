@@ -7,8 +7,8 @@
 - **System:** Library Management
 
 ## 📌 Base URL
-**Local Development:** `http://localhost:3000`
-**Deployed URL:** `library-management-system-backend-api-production.up.railway.app`
+- **Local Development:** `http://localhost:3000`
+- **Deployed URL:** `library-management-system-backend-api-production.up.railway.app`
 
 ## 🚀 Quick Start
 
@@ -169,7 +169,7 @@ library-management-api/
 ## ⚙️ Environment Variables
 ```env
 PORT=3000
-MONGO_URL=mongodb+srv://username:password@cluster.mongodb.net/library_db?retryWrites=true&w=majority
+MONGO_URL=mongodb+srv://username:password@cluster.mongodb.net
 ```
 
 ---
