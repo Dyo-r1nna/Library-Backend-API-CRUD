@@ -8,7 +8,7 @@
 
 ## 📌 Base URL
 - **Local Development:** `http://localhost:3000`
-- **Deployed URL:** `library-management-system-backend-api-production.up.railway.app`
+- **Deployed URL:** `http://library-management-system-backend-api-production.up.railway.app`
 
 ## 🚀 Quick Start
 
