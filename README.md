@@ -135,7 +135,6 @@ Content-Type: application/json
 - ✅ Environment variables via dotenv  
 - ✅ CORS enabled  
 - ✅ Morgan logging  
-- ✅ Clean and professional code structure  
 
 ---
 
@@ -163,6 +162,13 @@ library-management-api/
 ├── .env               # Environment variables
 ├── .gitignore         # Git ignore rules
 ├── package.json       # Dependencies
+```
+
+---
+## ⚙️ Environment Variables
+```env
+PORT=3000
+MONGO_URL=mongodb+srv://username:password@cluster.mongodb.net/library_db?retryWrites=true&w=majority
 ```
 
 ---
