@@ -165,14 +165,7 @@ library-management-api/
 ├── package.json       # Dependencies
 ```
 
----
-## ⚙️ Environment Variables
-```env
-PORT=3000
-MONGO_URL=mongodb+srv://username:password@cluster.mongodb.net
-```
 
----
 
 
 
