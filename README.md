@@ -61,4 +61,111 @@ npm start
 | POST | /api/loans | Create a new loan (borrow book) | 201, 400 |
 | PATCH | /api/loans/:id/return | Return a borrowed book | 200, 404 |
 
+---
+
+## 🧾 Sample Requests
+
+### Create a Book
+```bash
+POST /api/books
+Content-Type: application/json
+
+{
+  "isbn": "978-0132350884",
+  "title": "Clean Code",
+  "author": "Robert C. Martin",
+  "copies": 5
+}
+```
+
+### Create a Member
+```bash
+POST /api/members
+Content-Type: application/json
+
+{
+  "name": "Juan Dela Cruz",
+  "email": "juan@email.com"
+}
+```
+
+### Borrow a Book (Create Loan)
+```bash
+POST /api/loans
+Content-Type: application/json
+
+{
+  "memberId": "ACTUAL_MEMBER_ID_HERE",
+  "bookId": "ACTUAL_BOOK_ID_HERE"
+}
+```
+
+---
+
+## 🧪 Test Data
+- 📚 **5 sample books** (e.g., "Clean Code", "Design Patterns", etc.)
+- 👥 **4 sample members**
+- Ready for immediate testing after:
+  ```bash
+  npm run seed
+  ```
+
+---
+
+## 🔒 Features Implemented
+
+### Core Requirements
+- ✅ Complete CRUD for Books, Members, and Loans  
+- ✅ MongoDB Atlas integration  
+- ✅ Input validation and error handling  
+- ✅ Proper HTTP status codes (200, 201, 400, 404, 500)  
+- ✅ Pagination support (`?page=1&limit=10`)  
+- ✅ RESTful API design  
+
+### Business Logic
+- ✅ Loan management with constraints  
+- ✅ Max 5 books per member  
+- ✅ Book availability validation  
+- ✅ Automatic 14-day due date  
+- ✅ Real-time updates to availability  
+
+### Technical Features
+- ✅ Express.js MVC architecture  
+- ✅ Mongoose ODM for MongoDB  
+- ✅ Environment variables via dotenv  
+- ✅ CORS enabled  
+- ✅ Morgan logging  
+- ✅ Clean and professional code structure  
+
+---
+
+## 🛠️ Technology Stack
+| Layer | Technology |
+|:------|:------------|
+| Backend | Node.js + Express.js |
+| Database | MongoDB Atlas (Cloud) |
+| ODM | Mongoose |
+| Environment | dotenv |
+| Middleware | cors, morgan |
+
+---
+
+## 📁 Project Structure
+```
+library-management-api/
+├── src/
+│   ├── models/        # Data schemas (Book, Member, Loan)
+│   ├── controllers/   # Business logic
+│   ├── routes/        # API endpoints
+│   ├── app.js         # Main application
+│   └── db.js          # Database connection
+├── seed.js            # Sample data loader
+├── .env               # Environment variables
+├── .gitignore         # Git ignore rules
+├── package.json       # Dependencies
+```
+
+---
+
+
 
