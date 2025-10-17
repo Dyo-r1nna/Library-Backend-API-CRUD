@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "bf5c41d6-944c-4f1f-8fdb-49a002c23ccf",
 		"name": "Library Management API - Testing",
-		"description": "Comprehensive API testing for Library Management endpoints: Books, Members, and Loans.",
+		"description": "API testing for Library Management endpoints: Books, Members, and Loans.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "49191461",
 		"_collection_link": "https://rhiamaegojar24-7443716.postman.co/workspace/Rhia-Mae-Gojar's-Workspace~152db70f-1888-49b8-8411-9d8b0760af66/collection/49191461-bf5c41d6-944c-4f1f-8fdb-49a002c23ccf?action=share&source=collection_link&creator=49191461"
