@@ -10,14 +10,6 @@
 - **Local Development:** `http://localhost:3000`
 - **Deployed URL:** `http://library-management-system-backend-api-production.up.railway.app`
 
-## 🧪 Immediate Testing (30 seconds):
-- 1. Health Check: https://library-management-system-backend-api-production.up.railway.app/health
-- Output: Should show: {"ok":true}
-- 2. View Books: https://library-management-system-backend-api-production.up.railway.app/api/books
-- Output: Should show books list with details
-- 3. View Members: https://library-management-system-backend-api-production.up.railway.app/api/members
-- Output: Should show members list with details
-
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -76,20 +68,29 @@ npm start
 
 ### Create a Book
 ```bash
-POST /api/books
+POST http://library-management-system-backend-api-production.up.railway.app/api/books
 Content-Type: application/json
 
 {
-  "isbn": "978-0132350884",
-  "title": "Clean Code",
-  "author": "Robert C. Martin",
+  "isbn": "978-1233214567",
+  "title": "SE2",
+  "author": "Rhia Mae",
   "copies": 5
+}
+```
+### Update a Book
+```bash
+PUT http://library-management-system-backend-api-production.up.railway.app/api/books/
+Content-Type: application/json
+{
+  "title": "Updated SE2",
+  "copies": 10
 }
 ```
 
 ### Create a Member
 ```bash
-POST /api/members
+POST http://library-management-system-backend-api-production.up.railway.app/api/members
 Content-Type: application/json
 
 {
@@ -97,10 +98,19 @@ Content-Type: application/json
   "email": "juan@email.com"
 }
 ```
+### Update a Member
+```bash
+POST http://library-management-system-backend-api-production.up.railway.app/api/members/:id
+Content-Type: application/json
+
+{
+  "name": "Updated Member Name"
+}
+```
 
 ### Borrow a Book (Create Loan)
 ```bash
-POST /api/loans
+POST http://library-management-system-backend-api-production.up.railway.app/api/loans
 Content-Type: application/json
 
 {
@@ -108,7 +118,6 @@ Content-Type: application/json
   "bookId": "ACTUAL_BOOK_ID_HERE"
 }
 ```
-
 ---
 
 ## 🧪 Test Data
