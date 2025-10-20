@@ -10,6 +10,14 @@
 - **Local Development:** `http://localhost:3000`
 - **Deployed URL:** `http://library-management-system-backend-api-production.up.railway.app`
 
+#‎# 🧪IMMEDIATE TESTING (30 seconds):
+- 1. Health Check: https://library-management-system-backend-api-production.up.railway.app/health
+- Output: Should show: {"ok":true}
+- 2. View Books: https://library-management-system-backend-api-production.up.railway.app/api/books
+- Output: Should show books list with details
+- 3. View Members: https://library-management-system-backend-api-production.up.railway.app/api/members
+- Output: Should show members list with details
+
 ## 🚀 Quick Start
 
 ### Prerequisites
