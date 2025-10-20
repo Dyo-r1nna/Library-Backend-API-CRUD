@@ -41,6 +41,10 @@ const getBookById = async (req, res) => {
 
 const createBook = async (req, res) => {
     try {
+        console.log('🔴 DEBUG: CREATE BOOK FUNCTION STARTED');
+        console.log('🔴 DEBUG: Request Method:', req.method);
+        console.log('🔴 DEBUG: Request Body:', req.body);
+        
         const { isbn, title, author, copies } = req.body;
         
         if (!isbn || !title || !author || !copies) {
@@ -56,12 +60,18 @@ const createBook = async (req, res) => {
         });
 
         await book.save();
-        res.status(201).json(book);
+        console.log('🟢 DEBUG: Book saved successfully:', book.title);
+        
+        // RETURN ONLY THE NEW BOOK
+        console.log('🟢 DEBUG: Sending response with single book');
+        return res.status(201).json(book);
+        
     } catch (error) {
+        console.log('🔴 DEBUG: Error in createBook:', error.message);
         if (error.code === 11000) {
-            res.status(400).json({ error: 'ISBN already exists' });
+            return res.status(400).json({ error: 'ISBN already exists' });
         } else {
-            res.status(500).json({ error: error.message });
+            return res.status(500).json({ error: error.message });
         }
     }
 };
