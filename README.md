@@ -40,11 +40,11 @@ npm start
 ### 📘 Books Management
 | Method | Endpoint | Description | Status Codes |
 |:-------|:----------|:-------------|:--------------|
-| GET | /api/books | Get all books (with pagination) | 200 |
-| GET | /api/books/:id | Get specific book by ID | 200, 404 |
-| POST | /api/books | Create a new book | 201, 400 |
-| PUT | /api/books/:id | Update a book | 200, 404 |
-| DELETE | /api/books/:id | Delete a book | 200, 404 |
+| GET | /api/books | Get all books | 200 |
+| GET | /api/books/:id | Get specific book by ID | 200 |
+| POST | /api/books | Create a new book | 201 |
+| PUT | /api/books/:id | Update a book | 200 |
+| DELETE | /api/books/:id | Delete a book | 200 |
 
 ### 👥 Members Management
 | Method | Endpoint | Description | Status Codes |
@@ -80,7 +80,7 @@ Content-Type: application/json
 ```
 ### Update a Book
 ```bash
-PUT http://library-management-system-backend-api-production.up.railway.app/api/books/
+PUT http://library-management-system-backend-api-production.up.railway.app/api/books/:id
 Content-Type: application/json
 {
   "title": "Updated SE2",
