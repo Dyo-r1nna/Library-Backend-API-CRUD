@@ -1,7 +1,7 @@
 # Library-Management-System-API
 
 ## Student Information
-- **Name:** RHIA MAE U. GOJAR
+- **Name:** JORINNA E. ESPENA
 - **Course:** BSCS 4-1
 - **Submission Date:** October 17, 2025
 - **System:** Library Management
@@ -169,17 +169,27 @@ Content-Type: application/json
 
 ## 📁 Project Structure
 ```
-library-management-api/
-├── src/
-│   ├── models/        # Data schemas (Book, Member, Loan)
-│   ├── controllers/   # Business logic
-│   ├── routes/        # API endpoints
-│   ├── app.js         # Main application
-│   └── db.js          # Database connection
-├── seed.js            # Sample data loader
-├── .env               # Environment variables
-├── .gitignore         # Git ignore rules
-├── package.json       # Dependencies
+Library-Management-System-Backend-API/
+├── app.js (fixed version)
+├── package.json
+├── .env
+├── .gitignore
+├── config/
+│   └── db.js
+├── models/
+│   ├── Book.js
+│   ├── Member.js
+│   └── Loan.js
+├── routes/
+│   ├── books.js
+│   ├── members.js
+│   └── loans.js
+├── controllers/
+│   ├── bookController.js
+│   ├── memberController.js
+│   └── loanController.js
+└── middleware/
+    └── errorHandler.js
 ```
 
 
