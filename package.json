@@ -1,9 +1,8 @@
 {
   "name": "library-management-api",
   "version": "1.0.0",
-<<<<<<< HEAD
-  "description": "Library Management REST API with MongoDB",
-  "main": "src/app.js",
+  "description": "Library Management System Backend API",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
@@ -14,21 +13,6 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^7.0.0",
-=======
-  "description": "Library Management System Backend API",
-  "main": "app.js",
-  "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
-    "seed": "node seed.js",
-    "vercel-build": "npm install"  // Add this for Vercel
-  },
-  "dependencies": {
-    "express": "^4.18.2",
-    "mongoose": "^7.0.0",
-    "dotenv": "^16.0.3",
-    "cors": "^2.8.5",
->>>>>>> 4856b7199d224e1deb2ce35ed65d206b46a6770c
     "morgan": "^1.10.0"
   },
   "devDependencies": {
