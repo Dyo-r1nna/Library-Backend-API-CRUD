@@ -1,7 +1,7 @@
 # Library-Management-System-API
 
 ## Student Information
-- **Name:** JORINNA E. ESPENA
+- **Name:** JORINNA E. ESPEÑA 
 - **Course:** BSCS 4-1
 - **Submission Date:** October 17, 2025
 - **System:** Library Management
